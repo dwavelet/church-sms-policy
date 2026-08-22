@@ -23,7 +23,7 @@ exports.handler = function (context, event, callback) {
   // JOIN — unknown number opts in
   if (!sender && keyword === 'JOIN') {
     twiml.message(
-      'BibleStudy Group: Your request to join has been received. ' +
+      'BibleStudy: Your request to join has been received. ' +
       'The group leader will add you shortly. Msg & data rates may apply. Reply STOP to cancel.'
     );
     // Notify the leader
@@ -53,7 +53,7 @@ exports.handler = function (context, event, callback) {
 
   if (!sender) {
     twiml.message(
-      'BibleStudy Group: This number is not registered. ' +
+      'BibleStudy: This number is not registered. ' +
       'Text JOIN to this number to request access.'
     );
     return callback(null, twiml);
