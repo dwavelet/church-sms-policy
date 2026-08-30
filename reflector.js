@@ -107,8 +107,9 @@ exports.handler = async function (context, event, callback) {
         consentLog: { ...member.consentLog, yesConfirmationTime: now },
       });
       twiml.message(
-        `BibleStudy: Welcome, ${member.name}! You are now enrolled in the ` +
-        'Bible study SMS group. Reply STOP at any time to opt out.'
+        'BibleStudy: You\'re confirmed and enrolled in the recurring ' +
+        'BibleStudy SMS group. Msg frequency varies. Msg & data rates ' +
+        'may apply. Reply HELP for help or STOP to opt out.'
       );
       // Announce to existing members
       const active = await getActiveMembers();
@@ -155,11 +156,10 @@ exports.handler = async function (context, event, callback) {
     await client.messages.create({
       to: newE164, from: groupNumber,
       body:
-        `BibleStudy: You verbally requested to join our recurring SMS group for ` +
-        `Bible study discussion, prayer requests, and meeting coordination. ` +
-        `Msg frequency varies. Msg & data rates may apply. ` +
-        `Reply HELP for help or STOP to opt out. ` +
-        `Terms: ${TERMS_URL} Privacy: ${PRIVACY_URL}. Reply YES to confirm.`,
+          `BibleStudy: You verbally agreed to receive recurring BibleStudy ` +
+          `texts. Msg frequency varies. Msg & data rates may apply. ` +
+          `Reply YES to confirm, HELP for help, STOP to opt out. ` +
+          `Privacy: ${PRIVACY_URL} Terms: ${TERMS_URL}`,
     });
 
     twiml.message(
