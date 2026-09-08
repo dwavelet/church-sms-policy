@@ -1,0 +1,24 @@
+{
+  "name": "church-sms-policy",
+  "version": "1.0.0",
+  "description": "This package replaces the earlier Via-Text/JOIN design with a verbal-only enrollment design.",
+  "main": "reflector.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dwavelet/church-sms-policy.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/dwavelet/church-sms-policy/issues"
+  },
+  "homepage": "https://github.com/dwavelet/church-sms-policy#readme",
+  "dependencies": {
+    "twilio": "^6.1.0"
+  }
+}

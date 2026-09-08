@@ -15,9 +15,26 @@ const MAP_NAME  = 'members';
 
 // ── Edit this list before running ─────────────────────────────────────
 const FOUNDING_MEMBERS = [
-  { e164: '+14045550001', name: 'Pastor Dave', leader: true  },
-  { e164: '+14045550002', name: 'Alice',        leader: false },
-  { e164: '+14045550003', name: 'Ben',           leader: false },
+  { e164: '+13212985804', name: 'Mia Gifford', leader: true  },
+  { e164: '+13216072689', name: 'Brittany Gifford', leader: false },
+  { e164: '+13217477798', name: 'Bridgette Gifford', leader: false },
+  { e164: '+13214586690', name: 'Al Douglas', leader: false },
+  { e164: '+13216842927', name: 'Alak`e Davis', leader: false },
+  { e164: '+13215361615', name: 'Alma Adams', leader: false },
+  { e164: '+14072364944', name: 'Bonita Ross', leader: false },
+  { e164: '+13216338323', name: 'Cameo Bradley', leader: false },
+  { e164: '+13215912190', name: 'Cathy NLN', leader: false },
+  { e164: '+13212897100', name: 'Deborah NLN', leader: false },
+  { e164: '+14109523409', name: 'Janice Chance', leader: false },
+  { e164: '+13212891922', name: 'Jolie Cogan', leader: false },
+  { e164: '+13212662571', name: 'Gwen Richardson', leader: false },
+  { e164: '+13215256108', name: 'Minnie Orr', leader: false },
+  { e164: '+13217940020', name: 'Susan Jenkins', leader: false },
+  { e164: '+13215376541', name: 'Priscilla Burns', leader: false },
+  { e164: '+12532323335', name: 'Tee Lane', leader: false },
+  { e164: '+13866897047', name: 'Mary Whitesides', leader: false },
+  { e164: '+13214746156', name: 'Kathleen Shoda', leader: false },
+  { e164: '+13213602912', name: 'Jade Jordon', leader: false },
   // add all current members here
 ];
 // ──────────────────────────────────────────────────────────────────────
